@@ -3,6 +3,8 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faGoogle, faFacebook, faApple } from "@fortawesome/free-brands-svg-icons";
 
 function LoginForm() {
   const [password, setPassword] = useState("");
@@ -30,7 +32,7 @@ function LoginForm() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </FloatingLabel>
-          <FloatingLabel controlId="floatingPassword" label="Confirm Password">
+          <FloatingLabel controlId="floatingConfirmPassword" label="Confirm Password">
             <Form.Control
               type="password"
               placeholder="Confirm Password"
@@ -52,7 +54,9 @@ function LoginForm() {
         <p>Or continue with</p>
 
         <div className="socialLogins">
-              
+          <span className="iconBox"> <FontAwesomeIcon icon={faGoogle} size="2x"/> </span>
+          <span className="iconBox"> <FontAwesomeIcon icon={faFacebook} size="2x"/> </span>
+          <span className="iconBox"> <FontAwesomeIcon icon={faApple} size="2x"/> </span>
         </div>
       </div>
     </>
