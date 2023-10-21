@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 30vw;
+  text-align: center;
 }
 
 .socialLogins{
@@ -11,13 +12,40 @@
 }
 
 .iconBox {
-  width: 64px;
-  height: 64px;
+  width: 53px;
+  height: 37px;
   background-color: lightgray;
-  margin-inline: 10px;
-  border-radius: 50%;
+  margin-inline: 8px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+}
+
+.submitBtn{
+  width: -webkit-fill-available;
+  padding: 12px !important;
+}
+
+.formTitle{
+  font-weight: 700;
+  color: #0d6efd;
+
+}
+
+.formSubTitle{
+  font-weight: 500;
+}
+
+.form-control{
+  background-color: #edf4ff !important;
+}
+
+.btnText{
+  font-weight: 500;
+  color: #0d6efd;
+}
+
+.accText{
+  font-weight: 500;
 }

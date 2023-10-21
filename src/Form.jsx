@@ -15,11 +15,11 @@ function LoginForm() {
     <>
       <div className="formContainer">
         <Form>
-          <h3>Create Account</h3>
-          <p>Create an account so you can explore all the existing jobs</p>
+          <h3 className="formTitle">Create Account</h3>
+          <p className="formSubTitle">Create an account so you can explore all the existing jobs</p>
           <FloatingLabel
             controlId="floatingInput"
-            label="Email address"
+            label="Email"
             className="mb-3"
           >
             <Form.Control type="email" placeholder="name@example.com" />
@@ -48,15 +48,15 @@ function LoginForm() {
               }}
             />
           </FloatingLabel>
-          <Button type="submit">Sign up</Button>
+          <Button className="submitBtn mb-4" type="submit">Sign up</Button>
         </Form>
-        <p>Already have an account</p>
-        <p>Or continue with</p>
+        <p className="mb-5 accText">Already have an account</p>
+        <p className="btnText">Or continue with</p>
 
         <div className="socialLogins">
-          <span className="iconBox"> <FontAwesomeIcon icon={faGoogle} size="2x"/> </span>
-          <span className="iconBox"> <FontAwesomeIcon icon={faFacebook} size="2x"/> </span>
-          <span className="iconBox"> <FontAwesomeIcon icon={faApple} size="2x"/> </span>
+          <span className="iconBox"> <FontAwesomeIcon icon={faGoogle} size="1x"/> </span>
+          <span className="iconBox"> <FontAwesomeIcon icon={faFacebook} size="1x"/> </span>
+          <span className="iconBox"> <FontAwesomeIcon icon={faApple} size="1x"/> </span>
         </div>
       </div>
     </>
